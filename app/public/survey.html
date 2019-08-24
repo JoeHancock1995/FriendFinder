@@ -31,30 +31,27 @@
     <br>
     <hr/>
     <br>
-    <div class=Question>
+    <div class=Questions>
         <div class="box">
             <div id="questionOne">
-                <p>Agree or disagree. You prefer cats over dogs?    ( One represents strongly disagree & five represents agree strongly )</p>
-                <div class="btn-group" role="group" aria-label="Basic example">
+                <p>1. Agree or disagree. You prefer cats over dogs? (One represents strongly disagree & five represents agree strongly)</p>
                     <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
                     <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
                     <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
                     <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
                     <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                </div>
             </div>
-                <div id="questionTwo">
-                <p>Which type of movie would you rather watch?</p>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" name='option' value="1">Action</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="2">Comedy</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="3">Drama</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="4">Scifi</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="5">Documentary</button>
-                    </div>
-                </div>
+            <div id="questionTwo">
+                <p>2. Which type of movie would you rather watch?</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">Action</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">Comedy</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">Drama</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">Scifi</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">Documentary</button>
+            </div>
+            </div>
                 <div id="questionThree">
-                <p>Agree or disagree. You prefer non-fiction books to fiction books? ( One represents strongly disagree & five represents agree strongly )</p>
+                <p>3. Agree or disagree. You prefer non-fiction books to fiction books? (One represents strongly disagree & five represents agree strongly)</p>
                 <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
                         <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
@@ -64,65 +61,74 @@
                     </div>
                 </div>
                 <div id="questionFour">
-                <p>Agree or disagree. You prefer a cold climate to a warm climate?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /><p class="checkmark">Strongly Disagree </p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /><p class="checkmark">Disagree</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Nuetral</p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Agree</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Strongly Agree</p><span id="opt5"></span><br></label>
+                <p>4. Agree or disagree. You prefer a cold climate to a warm climate? (One represents strongly disagree & five represents agree strongly)</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                    </div>
                 </div>
+            <br>
                 <div id="questionFive">
-                    <p>Which one best describes your political views?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Liberterian</p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">Conservative</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Liberal</p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Communist</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Anarchist</p><span id="opt5"></span><br></label>
+                    <p>5. Which one best describes your political views?</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">Liberterian</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">Conservative</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">Liberal</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">Communist</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">Anarchist</button>
                 </div>
-                <div id="questionSix">
-                <p>Whats your ideal day off?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Beach with friends</p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">See new trails</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Stay home</p><span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">go see a movie/ concert</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Explore museums</p><span id="opt5"></span><br></label>
-                </div>
-                <div id="questionSeven">
-                <p>On a scale of one to five with one being not that important and five being essential how important is somebodies music taste within a friendship?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                </div>
-                <div id="questionEight">
-                <p>Agree or disagree. You'd rather go to an art exhibit over a profesional sports game?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /><p class="checkmark">Strongly Disagree </p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /><p class="checkmark">Disagree</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Nuetral</p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Agree</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Strongly Agree</p><span id="opt5"></span><br></label>
-                </div>
-                <div id="questionNine">
-                <p>If 1 represents having the most land but being furthest away from a city and 5 represents having no land but living downtown in a major city which one would you prefer?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                </div>
-                <div id="questionTen">
+        <br>
+            <div id="questionSix">
+                    <p>6. Whats your ideal day off?</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">Beach</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">Hiking trails</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">Stay home</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">Movie/ concert</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">Museums</button>
+            </div>
+        <br>
+            <div id="questionSeven">
+                <p>7. On a scale of one to five with one being unimportant and five being essential how important is somebodies music taste within a friendship?</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+            </div>
+        <br>
+            <div id="questionEight">
+                <p>8. Agree or disagree. You'd rather go to an art exhibit over a profesional sports game? (One represents strongly disagree & five represents agree strongly)</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+            </div>
+        <br>
+            <div id="questionNine">
+                <p>9. If 1 represents having the most land but being furthest away from a city and 5 represents having no land but living downtown in a major city which one would you prefer?</p>
+                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+            </div>
+        <br>
+            <div id="questionTen">
                 <p>In your life what do you find is most beneficial to your well-being?</p>
-                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Being outgoing and meeting new people</p> <span id="opt1"></span><br></label>
-                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">Spending quality time with friends</p> <span id="opt2"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Relaxing, having a nice meal, and preparing for the week ahead </p> <span id="opt3"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Travelling and seeing new place</p><span id="opt4"></span><br></label>
-                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Being creative and learning new things</p><span id="opt5"></span><br></label>  
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-secondary" name='option' value="1">Being outgoing and meeting new people</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">Spending quality time with friends</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">Relaxing, having a nice meal, and preparing for the week ahead</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">Travelling and seeing new place</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">Being creative and learning new things</button>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
