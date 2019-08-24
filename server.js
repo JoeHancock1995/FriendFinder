@@ -14,8 +14,8 @@ app.use(express.json());
 //====================================================//
 
 // points to "route" files.
-require("../routes/apiRoutes")(app);
-require("../routes/htmlRoutes")(app);
+/*require("./app/routing/apiRoutes");
+require("./app/routing/htmlRoutes");*/
 
 //====================================================//
 //======================LISTENER======================//

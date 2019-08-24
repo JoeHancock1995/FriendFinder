@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
   <title>Survey</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -21,117 +20,146 @@
             <input type="name" class="form-control" id="inputName3" placeholder="Name">
         </div>
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlFile1">Picture of you</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <div class="form-group row">
+        <label for="friend-photo"" class="col-sm-2 col-form-label">Link to photo image of yourself</label>
+        <div class="col-sm-10">
+            <input type="name" class="form-control" id="friend-photo" placeholder="image link">
+        </div>
     </div>
 <br><hr/><br>
-    <div class=Question>
-        <div class="box">
-            <div id="questionOne"><p>1. Agree or disagree. You prefer cats over dogs. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                </div>
+<div class=Questions>
+        <div><p>1. Agree or disagree. You prefer cats over dogs. (One = strongly disagree & five = strongly agree)</p>
+                <select id="questionOne">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
-            <div id="questionTwo"><p>2. Agree or disagree. You prefer a documentary film over a comedy. (One = strongly disagree & five = strongly agree) </p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                </div>
+        <br>
+            <div><p>2. Agree or disagree. You prefer a documentary film over a comedy. (One = strongly disagree & five = strongly agree) </p>
+                <select id="questionTwo">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
+        <br>
             <div id="questionThree"><p>3. Agree or disagree. You prefer non-fiction books to fiction books. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                </div>
+                <select id="questionThree">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
+        <br>
             <div id="questionFour"><p>4. Agree or disagree. You prefer a cold climate to a warm climate (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                </div>
-            </div>
+                <select id="questionFour">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div> 
         <br>
             <div id="questionFive"><p>5.Agree or disagree. You make it a priority to eat well. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                <select id="questionOne">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
-            </div>
+            
         <br>
             <div id="questionSix"><p>6. Agree or disagree. You prefer a day at the beach over a day at the museums. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                <select id="questionOne">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
-            </div>
+            
         <br>
             <div id="questionSeven"><p>7. Agree or disagree. You pride yourself on your knowledge of pop culture. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">    
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                <select id="questionOne">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
-            </div>
+            
         <br>
             <div id="questionEight"><p>8. Agree or disagree. You'd rather go to a profesional sports game rather than art exhibit. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">      
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                 </div>
-            </div>
-        <br>
-            <div id="questionNine"><p>9. Agree or disagree. You prefer the city to the quiet country side. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">    
-                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+            <select id="questionOne">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
-            </div>
-        <br>
-            <div id="questionTen"><p>10. Agree or disagree. You prioritize meeting new people and being outgoing. (One = strongly disagree & five = strongly agree)</p>
-                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">    
-                        <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
-                        <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
-                    </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+    <br>
+        <div><p>9. Agree or disagree. You prefer the city to the quiet country side. (One = strongly disagree & five = strongly agree)</p>
+            <select id="questionNine">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
         </div>
+    <br>
+        <div><p>10. Agree or disagree. You prioritize meeting new people and being outgoing. (One = strongly disagree & five = strongly agree)</p>
+            <select id="questionTen">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    <button type="submit" class="submit">Submit</button>
     </div>
 </form>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+<script type="text/javascript">
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+console.log($("#questionOne").val());
+var newFriend = {
+    friendName: $("#inputname3").val().trim(),
+    friendPhoto: $("#friend-photo").val().trim(),
+    scores: $(
+
+    )
+};
+
+console.log(newFriend);
+
+// $.post("/api/apiRoutes", newFriend,
+// function(data) {
+//     if (data) {}
+// })
+  })
+</script>

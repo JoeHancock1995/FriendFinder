@@ -7,11 +7,14 @@ var path = require("path");
 module.exports = function(app) {
 
 //===================GET requests=====================//
-  app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/survey.html"));
+app.GET("/home.html", function(req, res) {
+  res.sendFile(path.join(__dirname, "app/public/home.html"));
+});
+  app.GET("/public/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "/public/survey.html"));
   });
   //if no match defaults to home
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
+  app.GET("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "/public/home.html"));
   });
 };
