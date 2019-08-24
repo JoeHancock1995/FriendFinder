@@ -32,68 +32,93 @@
     <hr/>
     <br>
     <div class=Question>
-        <div id="box">
-            <div id="quizContainer" class="container">
-                <div id="question" class="question">
+        <div class="box">
+            <div id="questionOne">
+                <p>Agree or disagree. You prefer cats over dogs?    ( One represents strongly disagree & five represents agree strongly )</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                    <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                </div>
+            </div>
+                <div id="questionTwo">
+                <p>Which type of movie would you rather watch?</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" name='option' value="1">Action</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="2">Comedy</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="3">Drama</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="4">Scifi</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="5">Documentary</button>
+                    </div>
+                </div>
+                <div id="questionThree">
+                <p>Agree or disagree. You prefer non-fiction books to fiction books? ( One represents strongly disagree & five represents agree strongly )</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" name='option' value="1">1</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="2">2</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="3">3</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="4">4</button>
+                        <button type="button" class="btn btn-secondary" name='option' value="5">5</button>
+                    </div>
+                </div>
+                <div id="questionFour">
+                <p>Agree or disagree. You prefer a cold climate to a warm climate?</p>
+                    <label class="option"><input type="radio" name='option' value="1" /><p class="checkmark">Strongly Disagree </p> <span id="opt1"></span><br></label>
+                    <label class="option"><input type="radio" name="option" value="2" /><p class="checkmark">Disagree</p> <span id="opt2"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Nuetral</p> <span id="opt3"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Agree</p><span id="opt4"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Strongly Agree</p><span id="opt5"></span><br></label>
+                </div>
+                <div id="questionFive">
+                    <p>Which one best describes your political views?</p>
+                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Liberterian</p> <span id="opt1"></span><br></label>
+                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">Conservative</p> <span id="opt2"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Liberal</p> <span id="opt3"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Communist</p><span id="opt4"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Anarchist</p><span id="opt5"></span><br></label>
+                </div>
+                <div id="questionSix">
+                <p>Whats your ideal day off?</p>
+                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Beach with friends</p> <span id="opt1"></span><br></label>
+                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">See new trails</p> <span id="opt2"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Stay home</p><span id="opt3"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">go see a movie/ concert</p><span id="opt4"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Explore museums</p><span id="opt5"></span><br></label>
+                </div>
+                <div id="questionSeven">
+                <p>On a scale of one to five with one being not that important and five being essential how important is somebodies music taste within a friendship?</p>
                     <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
                     <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
+                </div>
+                <div id="questionEight">
+                <p>Agree or disagree. You'd rather go to an art exhibit over a profesional sports game?</p>
+                    <label class="option"><input type="radio" name='option' value="1" /><p class="checkmark">Strongly Disagree </p> <span id="opt1"></span><br></label>
+                    <label class="option"><input type="radio" name="option" value="2" /><p class="checkmark">Disagree</p> <span id="opt2"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Nuetral</p> <span id="opt3"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Agree</p><span id="opt4"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Strongly Agree</p><span id="opt5"></span><br></label>
+                </div>
+                <div id="questionNine">
+                <p>If 1 represents having the most land but being furthest away from a city and 5 represents having no land but living downtown in a major city which one would you prefer?</p>
                     <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
                     <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
                     <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>
-                <div id="question" class="question"></div>
-                <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">1</p> <span id="opt1"></span><br></label>
-                <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">2</p> <span id="opt2"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">3</p> <span id="opt3"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">4</p><span id="opt4"></span><br></label>
-                <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">5</p><span id="opt5"></span><br></label>  
+                </div>
+                <div id="questionTen">
+                <p>In your life what do you find is most beneficial to your well-being?</p>
+                    <label class="option"><input type="radio" name='option' value="1" /> <p class="checkmark">Being outgoing and meeting new people</p> <span id="opt1"></span><br></label>
+                    <label class="option"><input type="radio" name="option" value="2" /> <p class="checkmark">Spending quality time with friends</p> <span id="opt2"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="3" /> <p class="checkmark">Relaxing, having a nice meal, and preparing for the week ahead </p> <span id="opt3"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="4" /> <p class="checkmark">Travelling and seeing new place</p><span id="opt4"></span><br></label>
+                    <label class="option"><input type="radio"  name="option" value="5" /> <p class="checkmark">Being creative and learning new things</p><span id="opt5"></span><br></label>  
+                </div>
             </div>
         </div>
     </div>
