@@ -29,7 +29,7 @@
 <br><hr/><br>
 <div class=Questions>
         <div><p>1. Agree or disagree. You prefer cats over dogs. (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionOne">
+                <select id="answerOne">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -39,7 +39,7 @@
             </div>
         <br>
             <div><p>2. Agree or disagree. You prefer a documentary film over a comedy. (One = strongly disagree & five = strongly agree) </p>
-                <select id="questionTwo">
+                <select id="answerTwo">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -48,8 +48,8 @@
                 </select>
             </div>
         <br>
-            <div id="questionThree"><p>3. Agree or disagree. You prefer non-fiction books to fiction books. (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionThree">
+            <div><p>3. Agree or disagree. You prefer non-fiction books to fiction books. (One = strongly disagree & five = strongly agree)</p>
+                <select id="answerThree">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -58,8 +58,8 @@
                 </select>
             </div>
         <br>
-            <div id="questionFour"><p>4. Agree or disagree. You prefer a cold climate to a warm climate (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionFour">
+            <div><p>4. Agree or disagree. You prefer a cold climate to a warm climate (One = strongly disagree & five = strongly agree)</p>
+                <select id="answerFour">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -68,8 +68,8 @@
                 </select>
             </div> 
         <br>
-            <div id="questionFive"><p>5.Agree or disagree. You make it a priority to eat well. (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionOne">
+            <div><p>5.Agree or disagree. You make it a priority to eat well. (One = strongly disagree & five = strongly agree)</p>
+                <select id="answerFive">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -79,30 +79,30 @@
                 </div>
             
         <br>
-            <div id="questionSix"><p>6. Agree or disagree. You prefer a day at the beach over a day at the museums. (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionOne">
+            <div><p>6. Agree or disagree. You prefer a day at the beach over a day at the museums. (One = strongly disagree & five = strongly agree)</p>
+                <select id="answerSix">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                </div>
+            </div>
             
         <br>
-            <div id="questionSeven"><p>7. Agree or disagree. You pride yourself on your knowledge of pop culture. (One = strongly disagree & five = strongly agree)</p>
-                <select id="questionOne">
+            <div><p>7. Agree or disagree. You pride yourself on your knowledge of pop culture. (One = strongly disagree & five = strongly agree)</p>
+                <select id="answerSeven">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                </div>
+            </div>
             
         <br>
-            <div id="questionEight"><p>8. Agree or disagree. You'd rather go to a profesional sports game rather than art exhibit. (One = strongly disagree & five = strongly agree)</p>
-            <select id="questionOne">
+            <div><p>8. Agree or disagree. You'd rather go to a profesional sports game rather than art exhibit. (One = strongly disagree & five = strongly agree)</p>
+            <select id="answerEight">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -110,10 +110,9 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-
     <br>
         <div><p>9. Agree or disagree. You prefer the city to the quiet country side. (One = strongly disagree & five = strongly agree)</p>
-            <select id="questionNine">
+            <select id="answerNine">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -123,7 +122,7 @@
         </div>
     <br>
         <div><p>10. Agree or disagree. You prioritize meeting new people and being outgoing. (One = strongly disagree & five = strongly agree)</p>
-            <select id="questionTen">
+            <select id="answerTen">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -144,22 +143,29 @@
 </html>
 
 <script type="text/javascript">
+
   $(".submit").on("click", function(event) {
     event.preventDefault();
-console.log($("#questionOne").val());
 var newFriend = {
-    friendName: $("#inputname3").val().trim(),
-    friendPhoto: $("#friend-photo").val().trim(),
-    scores: $(
-
-    )
+    friendName: $("#inputname3").val(),
+    friendPhoto: $("#friend-photo").val(),
+    scores: [$("#answerOne").val(),
+    $("#answerTwo").val(),
+    $("#answerThree").val(),
+    $("#answerFour").val(),
+    $("#answerFive").val(),
+    $("#answerSix").val(),
+    $("#answerSeven").val(),
+    $("#answerEight").val(),
+    $("#answerNine").val(),
+    $("#answerTen").val()]
 };
-
 console.log(newFriend);
+});
+
 
 // $.post("/api/apiRoutes", newFriend,
 // function(data) {
 //     if (data) {}
 // })
-  })
 </script>
