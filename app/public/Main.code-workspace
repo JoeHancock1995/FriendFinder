@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "/Users/Joe/bootcamp_class"
+		},
+		{
+			"path": "/Users/Joe/Coding"
+		}
+	],
+	"settings": {
+		"remote.onstartup": true
+	}
+}

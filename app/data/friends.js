@@ -33,7 +33,7 @@ var friends =[
     ]
 },
 {
-    "name": "Mercury",
+    "name": "Miliken",
     "photo": "",
     "scores":[
         5,
