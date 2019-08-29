@@ -12,10 +12,11 @@ app.use(express.json());
 //====================================================//
 //======================ROUTER========================//
 //====================================================//
+app.use('/', express.static('../public'));
 
 // points to "route" files.
-/*require("./app/routing/apiRoutes");
-require("./app/routing/htmlRoutes");*/
+require("./app/routing/apiRoutes");
+require("./app/routing/htmlRoutes");
 
 //====================================================//
 //======================LISTENER======================//

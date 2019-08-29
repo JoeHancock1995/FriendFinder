@@ -1,5 +1,5 @@
 var path = require("path");
-
+var express = require("express");
 //=====================================================//
 //======================ROUTING========================//
 //====================================================//
@@ -7,14 +7,14 @@ var path = require("path");
 module.exports = function(app) {
 
 //===================GET requests=====================//
-app.GET("/home.html", function(req, res) {
-  res.sendFile(path.join(__dirname, "app/public/home.html"));
+app.get("/home", function(req, res) {
+  res.sendFile("/home.html");
 });
-  app.GET("/public/survey", function(req, res) {
+  app.get("/public/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "/public/survey.html"));
   });
   //if no match defaults to home
-  app.GET("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "/public/home.html"));
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/home.html"));
   });
 };
