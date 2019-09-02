@@ -203,24 +203,6 @@
 
   $(".submit").on("click", function(event) {
     event.preventDefault();
-
-    var newFriend = {
-    friendName: $("#inputname").val(),
-    friendPhoto: $("#friend-photo").val(),
-    scores: [
-    $("#answerOne").val(),
-    $("#answerTwo").val(),
-    $("#answerThree").val(),
-    $("#answerFour").val(),
-    $("#answerFive").val(),
-    $("#answerSix").val(),
-    $("#answerSeven").val(),
-    $("#answerEight").val(),
-    $("#answerNine").val(),
-    $("#answerTen").val()]
-};
-console.log(newFriend);
-
 // Get the modal
 var resultsModal = document.getElementById("resultsModal");
 // Get the button that opens the modal
@@ -245,22 +227,30 @@ $(window).on('click', function(event){
     }
 });
 
-function runSurveyQuery() {
-    $.ajax({ url: "/api/friends", method: "POST"})
-    .then(function(newFriend) {
-        console.log(newFriend);
 
-        for (var i = 0; i < newFriend.length; i++) {
-            var friendsList = $("#friendsList");
-        }
-    });
-}
+var newFriend = {
+    friendName: $("#inputname").val(),
+    friendPhoto: $("#friend-photo").val(),
+    scores: [
+    $("#answerOne").val(),
+    $("#answerTwo").val(),
+    $("#answerThree").val(),
+    $("#answerFour").val(),
+    $("#answerFive").val(),
+    $("#answerSix").val(),
+    $("#answerSeven").val(),
+    $("#answerEight").val(),
+    $("#answerNine").val(),
+    $("#answerTen").val()]
+};
+console.log(newFriend);
+
 
 // $.post("/api/friends", newFriend,
 // function(data) {
 //     $("#match-name").text(data.friendName);
 //     $("#match-img").attr("src", data.friendPhoto);
-//     $.(answerOne)
+ 
 
 });
 // });

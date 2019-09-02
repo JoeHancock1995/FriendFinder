@@ -1,4 +1,4 @@
-var friendsData = require("../data/friends");
+var friends = require("../data/friends");
 
 //=====================================================//
 //======================ROUTING========================//
@@ -8,7 +8,7 @@ module.exports = function(app) {
 //===================GET requests=====================//
 // create GET route with url /api/friends  this will display a JSON of all possible friends
 app.get("/api/friends", function(req, res) {
-    res.json(friendsData);
+    res.json(friends);
   });
 
 //==================POSt requests====================//
