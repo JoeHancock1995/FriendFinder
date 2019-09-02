@@ -223,11 +223,8 @@ console.log(newFriend);
 
 // Get the modal
 var resultsModal = document.getElementById("resultsModal");
-// $("#submit").on("click", function(event) )
-
 // Get the button that opens the modal
 var viewModal = document.getElementById("submit");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -247,13 +244,23 @@ $(window).on('click', function(event){
         $('#resultsModal').css({display: "none"});
     }
 });
+
+function runSurveyQuery() {
+    $.ajax({ url: "/api/friends", method: "POST"})
+    .then(function(newFriend) {
+        console.log(newFriend);
+
+        for (var i = 0; i < newFriend.length; i++) {
+            var friendsList = $("#friendsList");
+        }
+    });
+}
+
 // $.post("/api/friends", newFriend,
 // function(data) {
 //     $("#match-name").text(data.friendName);
 //     $("#match-img").attr("src", data.friendPhoto);
-
-
-//clears data
+//     $.(answerOne)
 
 });
 // });
