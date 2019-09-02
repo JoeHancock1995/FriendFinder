@@ -17,7 +17,7 @@
     <div class="form-group row">
         <label for="inputname3" class="col-sm-2 col-form-label">Your Name</label>
         <div class="col-sm-10">
-            <input type="name" class="form-control" id="inputName3" placeholder="Name">
+            <input type="name" class="form-control" id="inputName" placeholder="Name">
         </div>
     </div>
     <div class="form-group row">
@@ -134,25 +134,28 @@
     </div>
 </form>
 <!-- Modal -->
-<div class="modal fade" id="modal-match" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+
+<div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
+</div>
+
+<a href="/api/friends">API Friends List</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -167,7 +170,7 @@
   $(".submit").on("click", function(event) {
     event.preventDefault();
 var newFriend = {
-    friendName: $("#inputname3").val(),
+    friendName: $("#inputname").val(),
     friendPhoto: $("#friend-photo").val(),
     scores: [$("#answerOne").val(),
     $("#answerTwo").val(),
@@ -182,12 +185,16 @@ var newFriend = {
 };
 console.log(newFriend);
 
-//
+
 $.post("/api/friends", newFriend,
 function(data) {
-    
+    $("#match-name").text(data.friendName);
+    $("#match-img").attr("src", data.friendPhoto);
+
+    $("#match-modal").modal("toggle");
 
 //clears data
 
+});
 });
 </script>
