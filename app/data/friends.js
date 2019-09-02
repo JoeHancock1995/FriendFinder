@@ -33,7 +33,7 @@ var friends =[
     ]
 },
 {
-    "name": "Miliken",
+    "name": "Milikin",
     "photo": "",
     "scores":[
         5,
@@ -65,6 +65,8 @@ var friends =[
     ]
 },
 ];
+
+module.exports = friends;
 // convert each users results into a simple array of numbers
 // compare current from other users scores question by question then add up and calculate the =>>>> totalDifference
 
