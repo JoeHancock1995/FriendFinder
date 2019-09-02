@@ -15,8 +15,8 @@ app.use(express.json());
 app.use('/', express.static('../public'));
 
 // points to "route" files.
-require("./app/routing/apiRoutes");
-require("./app/routing/htmlRoutes");
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //====================================================//
 //======================LISTENER======================//
