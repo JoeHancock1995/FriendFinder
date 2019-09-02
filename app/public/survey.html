@@ -130,32 +130,28 @@
                 <option value="5">5</option>
             </select>
         </div>
-    <button type="submit" class="submit">Submit</button>
-    </div>
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="submit">Submit</button>
+
 </form>
 <!-- Modal -->
+<!-- The Modal -->
+<div id="Modal" class="modal">
 
-<div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+      
 </div>
-
-<a href="/api/friends">API Friends List</a>
+<hr>
+<a href="/api/friends">API Friends List</a> |
+<a href="https://github.com/JoeHancock1995/FriendFinder">Github Repo</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -169,7 +165,8 @@
 
   $(".submit").on("click", function(event) {
     event.preventDefault();
-var newFriend = {
+
+    var newFriend = {
     friendName: $("#inputname").val(),
     friendPhoto: $("#friend-photo").val(),
     scores: [$("#answerOne").val(),
@@ -185,16 +182,39 @@ var newFriend = {
 };
 console.log(newFriend);
 
+// Get the modal
+var modal = document.getElementById("Modal");
 
-$.post("/api/friends", newFriend,
-function(data) {
-    $("#match-name").text(data.friendName);
-    $("#match-img").attr("src", data.friendPhoto);
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
-    $("#match-modal").modal("toggle");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// $.post("/api/friends", newFriend,
+// function(data) {
+//     $("#match-name").text(data.friendName);
+//     $("#match-img").attr("src", data.friendPhoto);
+
 
 //clears data
 
 });
-});
+// });
 </script>
