@@ -201,8 +201,8 @@
 
 <script type="text/javascript">
 
-  $(".submit").on("click", function(event) {
-    event.preventDefault();
+$(".submit").on("click", function(event) {
+event.preventDefault();
 // Get the modal
 var resultsModal = document.getElementById("resultsModal");
 // Get the button that opens the modal
@@ -246,12 +246,12 @@ var newFriend = {
 console.log(newFriend);
 
 
-// $.post("/api/friends", newFriend,
-// function(data) {
-//     $("#match-name").text(data.friendName);
-//     $("#match-img").attr("src", data.friendPhoto);
- 
-
+$.post("/api/friends", newFriend,
+function(data) {
+    $("#match-name").text(data.friendName);
+    $("#match-img").attr("src", data.friendPhoto);
+    $("#resultsModal").moddle("toggle");
 });
-// });
+  
+});
 </script>
